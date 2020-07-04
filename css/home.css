@@ -1,0 +1,102 @@
+:root {
+    --support-color: lightgreen;
+    --products-color: #6633cc;
+    --friboi-color: #e11d25;
+    --developer-color: #5d80d6;
+}
+body {
+    height: 120vh;
+}
+.contents header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contents header h3:first-child {
+    opacity: 0.8;
+    color: gray;
+}
+.contents header .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.contents header .login p {
+    margin-left: 550px;
+    color: grey;
+    font-weight: bold;
+}
+.services-offering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-offering h3 {
+    color: gray;
+}
+.services-offering h3 a {
+    text-decoration: none;
+    color: #6633cc;
+}
+.services-offering .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+.services-offering .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 8px;
+}
+.services-offering .services .service p{
+    width: 80%;
+    text-align: center;
+}
+.services-offering .service img {
+    width: 70px;
+    height: 70px;
+}
+.services-offering .service i {
+    transform: scale(2.00);
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+}
+.services-offering #support-service {
+    box-shadow: 0px 5px 20px 10px var(--support-color);
+}
+.services-offering #support-service i {
+    color: var(--support-color);
+}
+.services-offering #products-service {
+    box-shadow: 0px 5px 20px 10px var(--products-color);
+}
+.services-offering #products-service i {
+    color: var(--products-color);
+}
+.services-offering #phisical-store-service {
+    box-shadow: 0px 5px 20px 10px var(--friboi-color);
+}
+.services-offering #phisical-store-service img {
+    width: 150px;
+}
+.services-offering #phisical-store-service i {
+    color: var(--friboi-color);
+}
+.services-offering #work-with-us-service {
+    box-shadow: 0px 5px 20px 10px var(--developer-color);
+}
+.services-offering #products-service i {
+    color: var(--developer-color);
+}

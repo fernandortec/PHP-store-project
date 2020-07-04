@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/userRegister.css">
+    <title>Registro de usuário</title>
+</head>
+<body>
+   <div class="contents">
+        <p>Cadastre seu usuário aqui</p>
+        <h2>Cadastro</h2>
+        <form action="user.php" method="POST" >
+            <input
+                type="text"
+                placeholder="Nome"
+                name="name"
+                required
+                autocomplete="off"
+            >
+            <input
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                required
+                autocomplete="off"
+            >
+            <input
+                type="password"
+                placeholder="Senha"
+                name="password"
+                required
+                autocomplete="off"
+            >
+            <input
+                type="text"
+                placeholder="Endereco completo"
+                name="address"
+                required
+                autocomplete="off"
+            >
+            <select name="profile" required>
+                <option value="">Escolha um perfil</option>
+                <option value="manager">Administrador</option>
+                <option value="professor">Professor</option>
+                <option value="student">Aluno</option>
+            </select>
+            <div class="buttons">
+                <button type="submit" name="store">Cadastrar</button>
+                <a href="index.html"><span>Logar</span></a>
+            </div>
+        </form>
+   </div>
+</body>
+</html>

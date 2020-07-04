@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <div class="contents">
+        <form action="product.php" method="POST">
+            <h2>Cadastro de Produtos</h2>
+            <p>Cadastre seu produto aqui!!</p>
+            <input
+                placeholder="Nome do produto"
+                name="product-name"
+                required
+                autocomplete="off"
+            >
+            <input
+                placeholder="Marca do produto"
+                name='product-brand'
+                required
+                autocomplete="off"
+            >
+            <label for="product-date">Data de validade</label>
+            <input
+                placeholder="Data de validade"
+                name='product-date'
+                required
+                type="date"
+                autocomplete="off"
+            >
+            <label for="fabrication-date" >Data de fabricação</label>
+            <input
+                placeholder="Data de fabricação"
+                name='fabrication-date'
+                type='date'
+                required
+                autocomplete="off"
+            >
+            <input
+                placeholder="Peso em gramas"
+                name='product-weight'
+                type="number"
+                step="any"
+                required
+                autocomplete="off"
+            />
+            <input
+                placeholder="Quantidade"
+                name="product-quantity"
+                type="number"
+                required
+                autocomplete="off"
+            >
+            <input
+                placeholder="Preço"
+                name='product-price'
+                type="number"
+                step="any"
+                required
+                autocomplete="off"
+            />
+            <button type="submit" name="products" >Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

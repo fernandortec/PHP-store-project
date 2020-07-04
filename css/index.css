@@ -1,0 +1,23 @@
+.contents form {
+   height: 45vh;
+}
+.buttons {
+    width: 90%;
+}
+.buttons a {
+    text-decoration: none;
+    color: white;
+}
+.buttons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 5px 0px 10px;
+}
+.buttons button {
+    margin: 30px 5px 0px 10px;
+}
+.buttons a {
+    width: 30%;
+}
